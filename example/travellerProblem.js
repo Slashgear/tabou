@@ -32,6 +32,6 @@ const firstValue = _.shuffle(points);
 
 console.log(chalk.red('Begin', showTravel(firstValue),fitness(firstValue)));
 
-const bestFound = tabou(firstValue, hashcode, 1000000, fitness, neighbours);
+const bestFound = tabou(firstValue, hashcode, 100000, fitness, neighbours);
 
 console.log(chalk.yellow('Best travel found', showTravel(bestFound.value), '', bestFound.fitness));
